@@ -1,3 +1,4 @@
+"strict use"; // treat all JS code as new version.
 const myName = "Moinuddin";
 let age = 26;
 let inHome = true;
