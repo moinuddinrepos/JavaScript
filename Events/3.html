@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Welcome to JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        const myFun = function(str) {
+            const time = new Date()
+            time.toLocaleTimeString()
+            console.log(str,time);
+        }
+        // setInterval(myFun, 1000, 'Moinuddin')
+
+        const stopInterval = setInterval(myFun, 1000, 'Moinuddin')
+
+        clearInterval(stopInterval)
+
+        
+    </script>
+</body>
+</html>
