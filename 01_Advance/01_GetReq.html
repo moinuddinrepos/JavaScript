@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReqAPI's</title>
+</head>
+<body style="background-color: #414141;">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa officiis obcaecati ea aliquid quidem animi ipsam aut eum. Sapiente, labore?</p>
+
+    <script>
+        const reqUrl  = 'https://api.github.com/users/moinuddinrepos'
+        const getReq = new XMLHttpRequest();
+        getReq.open('GET', reqUrl)
+        getReq.onreadystatechange = function () { // to print all state
+
+            console.log(getReq.readyState); // state print '1'
+        }
+        getReq.send()
+    </script>
+</body>
+</html>
