@@ -36,9 +36,20 @@ console.log(myArray)
 
 //Task 7 use map method to create a new array where each number is double and log the new array.
 
-const newArray = [1,2,3,4,5,6,7,8,9,0]
-const double = newArray.map(newArray => newArray * 2)
-console.log(`Oraginal Array`, newArray)
+const numbers = [1,2,3,4,5,6,7,8,9,0,16,17,98,97]
+const double = numbers.map(numbers => numbers * 2)
+console.log(`Oraginal Array`, numbers)
 console.log(`Double Array`, double)
+
+// Task 8 filter method to create a new array with only even numbers and log the new array.
+
+const evenNum = numbers.filter(numbers => numbers % 2 === 0)
+console.log('Even numbers are: ', evenNum)
+
+//Task 9 reduce method to calculate the sum of all number in the array and log the result.
+
+const sum = numbers.reduce((accumulator, currentNumber) => accumulator + currentNumber, 0);
+
+console.log(`Addition of all elements in the array is ${sum}`)
 
 
