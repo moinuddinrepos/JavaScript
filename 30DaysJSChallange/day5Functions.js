@@ -65,3 +65,37 @@ const checkStr = (str) => {
 }
 checkStr('hello')
 
+//Activity 4 Functions parameters and defualt values.
+//Task 7 Write a function that takes two parameters and return their product provide a defualt value for the second parameter.
+
+
+myFun = (a, b = 3) => {
+    return a * b
+}
+console.log(myFun(10))
+
+//Task 8 Write a function that takes a person's name and age and returns greeting message provide a defualt value for the age,
+
+
+myFun = (name, age = 10) => {
+    return `name is ${name} and I am ${age}`
+}
+console.log(myFun('moinuddin'))
+
+
+//Activity 5 Higher order function
+//Task 9 Write a higher order function that takes a function and a number and call the function that many times.
+
+myFun = (func, num) => {
+    for (let i = 0; i < num; i++) {
+        func() 
+    }
+}
+
+HOF = () => {                   // HOF Higher order function
+    console.log('Hello')
+}
+myFun(HOF, 3)
+
+
+
