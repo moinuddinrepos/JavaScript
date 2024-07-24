@@ -52,4 +52,48 @@ const sum = numbers.reduce((accumulator, currentNumber) => accumulator + current
 
 console.log(`Addition of all elements in the array is ${sum}`)
 
+//Activity Iteration
+//Task 10 Use a for loop iterate over the array and log the each element and console the result.
+
+myFun = () => {
+    for (let i = 0; i < numbers.length; i++) {
+        console.log(numbers[i])
+    }
+}
+myFun()
+
+//Task 11 Use a forEach method to iterate over the array and log the each element and console the result.
+
+numbers.forEach(numbers => {
+    console.log(numbers)
+});
+
+//Activity 5 Multidimensional array.
+//Task 12 Create a two dimensional Array(matrix) and log the result to the console.
+
+const array1 = [1,2,3,4,5]
+const array2 = [6,7,8,9,0]
+console.log(...array1, ...array2) // concadinate 2 arrays
+
+const newArray = [[1,2,3],
+                [4,5,6],
+                [7,8,9]]
+
+                console.log(newArray)
+//or
+
+const row = 3
+const col = 3
+const martix = []
+
+for (let i = 0; i < row; i++) {
+    martix [i] = [];
+    for (let j = 0; j < col; j++) {
+        martix [i][j] = i * col + j + 1
+        
+    }
+    
+}
+
+console.log(martix)
 
