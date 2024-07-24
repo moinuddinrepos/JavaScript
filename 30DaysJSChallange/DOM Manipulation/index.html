@@ -1,0 +1,24 @@
+<!-- //Activity DOM manipulation -->
+ <!-- Task 1 Selecting an html element by its id and change its text content -->
+ <!-- Task 2 Selecting an html element by its class and change background color -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">Hello</h1>
+    <h1  class="changeClr">ChangeBgcolor</h1>
+</body>
+<script>
+    const changeContent = document.getElementById('hello')
+    changeContent.textContent = 'Welcome'
+    changeContent.style.backgroundColor = 'pink'
+
+    
+
+</script>
+</html>
