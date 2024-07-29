@@ -12,11 +12,86 @@
 <body>
     <h1 id="hello">Hello</h1>
     <h1  class="changeClr">ChangeBgcolor</h1>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!--Modifying arrtribute and classes-->
+    <!--Select an html element and change one of its attribute (e.g src of an img tag)-->
+    <img src="../day1.js" alt="">
+
+    <p id="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae soluta libero aliquid atque voluptatibus deleniti nemo nostrum nisi impedit.</p>
+
+    <button id="change-btn">Click to change content</button>
 </body>
 <script>
     const changeContent = document.getElementById('hello')
     changeContent.textContent = 'Welcome'
     changeContent.style.backgroundColor = 'pink'
+
+    // <!--Creating and appending elemets-->
+    // <!--Task 3 Create a new div element with some text content and append it to the body-->
+    const newDiv = document.createElement('div')
+    newDiv.textContent = 'Hey Moinuddin'
+    document.body.appendChild(newDiv)
+    newDiv.style.backgroundColor = 'red'
+
+    //Create a new li element and add it to the existing ul tag.
+    const ul = document.querySelector('ul')
+    const newli = document.createElement('li')
+    newli.textContent = 'Water'
+    ul.appendChild(newli)
+
+    // <!--Removing element-->
+    // <!--Select an html elemnt and remove it from DOM-->
+    //  const element = document.getElementById('hello')
+    //  element.remove()
+
+    //Remove the last element of specific element.
+    // const elemets = document.querySelector('ul')
+    // elemets.removeChild(elemets.lastChild)
+
+    // <!--Modifying arrtribute and classes-->
+    // <!--Select an html element and change one of its attribute (e.g src of an img tag)-->
+    const img = document.querySelector('img')
+    img.setAttribute('src','../moin.html')
+
+    //Add and remove CSS class to/from an html element.
+    //addign class
+    const uls = document.querySelector('ul')
+    uls.classList.add('newClass')
+
+    //for remove classList.remove
+
+    //Activity 5 Event handling.
+    //Add a click event listener to a button that change the text content of the paragraph.
+
+    const btn = document.querySelector('#change-btn')
+    const para = document.querySelector('#paragraph')
+
+    btn.addEventListener('click', () => {
+        para.textContent = 'Text Changed..!'
+        para.style.backgroundColor = 'green'
+        para.style.padding = '20px'
+        para.style.borderColor = 'black'
+        para.style.textContent = 'center'
+    })
+
+    // Add a mouse hover event listener to an element that change its border color.
+    para.addEventListener('mouseover', () => {
+    para.style.borderColor = 'red';
+});
+
+
+
+
+
+
+
+
 
     
 
