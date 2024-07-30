@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--Activity 4 form event-->
+    <!--Add a submit event listener to a form that prevent the default submission and log the form data to the console-->
+    <form id="my-form">
+        <input type="text" name="Full name" id="" placeholder="Enter fullname">
+        <input type="password" name="" id="" placeholder="Password">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+    <script>
+        const form = document.querySelector('#my-form')
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+        })
+
+        //Getting form data
+        const formData = new FormData(form)
+        console.log(formData)
+    </script>
+</html>
